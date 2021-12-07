@@ -36,7 +36,7 @@
   * shear_range=0.2
   * fill_mode="nearest"
 
-* 이때 flip은 사용하지 않았고 rotation_range 또한 크지 않은 수치를 사용하였는데, flip 혹은 과도한 rotation은 6-9를 서로 뒤집힌것으로 보이게 할 수 있기 때문
+* **이때 flip은 사용하지 않았고 rotation_range 또한 크지 않은 수치를 사용하였는데, flip 혹은 과도한 rotation은 6-9를 서로 뒤집힌것으로 보이게 할 수 있기 때문**
 * 실험적으로 파인튜닝을 하였고, 활성화 함수를 **Swish** 로 사용한 결과, 최종 정확도 **0.939** 달성
 
 
