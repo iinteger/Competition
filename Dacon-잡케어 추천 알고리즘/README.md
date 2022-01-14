@@ -16,3 +16,10 @@
 
   
 
+</br>
+
+## 22. 01. 10 ~ 22. 01. 14
+
+* 기존 코드는 k-fold를 사용하므로 폴드 수를 늘리면 early stopping에 사용하는 validation data가 줄어들기 때문에 overfitting의 위험이 있음. 보다 많은 모델을 사용하기 위해 k-fold 방식에서, 매 훈련마다 20%의 validation data를 random sampling하는 방법으로 바꿈. 최적의 validation ratio는 실험적으로 테스트중
+* public score가 전체 테스트 데이터의 33%라는것에서 착안하여, public score를 높이는것이 private socre의 향상에도 도움이 될 것이라고 예상됨. 따라서 threshold를 valid score가 가장 높게 나오는 0.39로 설정. (validation ratio에 따라서 바뀔 수 있음)
+
