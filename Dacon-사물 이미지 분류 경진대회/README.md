@@ -11,6 +11,9 @@
 ## 2022. 03. 04
 
 - #### Public Score : 0.919, 4/235 등, 상위 1.7%
+- #### Private Score : 0.914, 4/235 등, 상위 1.7%
+</br>
+
 * Cifar-10 데이터를 분류하는 Basic 대회
 
 * Train data , Valid data를 8:2로 나누어 사용
