@@ -34,9 +34,7 @@
 
 * CosineAnnealingLR 스케줄러 사용
 
-* 기존 데이터 size인 32x32를 그대로 사용하지 않고 크게 확대하여 사용함
-
-* 데이터 사이즈는 112, 224로 사용하였고, batch size는 메모리가 허락하는 값 중 가장 큰 2의 제곱수 사용
+* 기존 데이터 size가 32x32로 작기 때문에 112, 224 등으로 확대하여 사용함. 이미지에 왜곡이 발생하더라도 학습에 사용한 EfficientNet의 Input Size에 근접한 값을 사용하는것이 좋다고 판단
 
 * 다음 여섯가지 모델을 Soft Voting하여 결과를 예측
   
@@ -53,3 +51,4 @@
   * EfficientNet-b7
 
 * TTA를 5번 한 평균값을 사용했을때보다 TTA를 사용하지 않았을 때 결과가 더 좋게 나왔음
+  * Augmentation이 모델의 Robustness는 향상시키지만 목표 데이터셋의 Top-Accuracy에는 크게 영향을 끼지 않는 것으로 예상됨
